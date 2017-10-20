@@ -1,0 +1,25 @@
+{
+  "name": "ownews",
+  "version": "0.0.1",
+  "description": "Overwatch news",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon main.js",
+    "dev": "web-ext run",
+    "prebuild": "web-ext sign --api-key=$AMO_JWT_ISSUER --api-secret=$AMO_JWT_SECRET ",
+    "build": "web-ext build",
+    "clean"
+  },
+  "keywords": [
+    "overwatch",
+    "ow",
+    "news",
+    "blizzard"
+  ],
+  "author": "ugo.arzur@gmail.com",
+  "dependencies": {
+    "blizzard.js": "^2.0.3"
+  },
+  "license": "MIT"
+}
